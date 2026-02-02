@@ -24,13 +24,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-x-hidden bg-[#fdfaf1]">
+    <div className="min-h-screen flex flex-col relative overflow-x-hidden bg-[#EDE8D0]">
       {/* Background Gradients - Suaves y aireados para fondo crema */}
       <div className="fixed inset-0 pointer-events-none -z-10">
         {/* Glow cálido Oro/Cian */}
         <div className="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-yellow-100/30 blur-[150px] rounded-full"></div>
         {/* Glow suave Turquesa */}
-        <div className="absolute bottom-[-10%] left-[-5%] w-[800px] h-[800px] bg-cyan-100/20 blur-[150px] rounded-full"></div>
+        <div className="absolute bottom-[-10%] left-[-5%] w-[800px] h-[800px] bg-blue-100/10 blur-[150px] rounded-full"></div>
       </div>
 
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
@@ -42,7 +42,7 @@ const App: React.FC = () => {
       <ChatMentor />
 
       <footer className="py-8 border-t border-slate-200 text-center text-slate-400 text-[10px] font-orbitron tracking-widest">
-        <p>© 2024 CIFRA FLOW. EL CONOCIMIENTO ES LA CLAVE DEL CONSUMO.</p>
+        <p>© 2024 CIFRA FLOW. LA PRÓXIMA GENERACIÓN DE LÍDERES.</p>
       </footer>
     </div>
   );

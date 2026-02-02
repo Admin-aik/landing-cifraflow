@@ -23,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection }) => {
           className="flex items-center gap-2 cursor-pointer" 
           onClick={() => setActiveSection(Section.HOME)}
         >
-          <div className="w-8 h-8 bg-cyan-600 rounded-md flex items-center justify-center font-orbitron font-bold text-white shadow-sm">CF</div>
+          <div className="w-8 h-8 bg-slate-900 rounded-md flex items-center justify-center font-orbitron font-bold text-white shadow-sm">CF</div>
           <span className="font-orbitron font-bold tracking-wider hidden sm:block text-slate-800">CIFRA FLOW</span>
         </div>
 
@@ -32,8 +32,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection }) => {
             <button
               key={item.id}
               onClick={() => setActiveSection(item.id)}
-              className={`text-sm font-semibold transition-all hover:text-cyan-600 ${
-                activeSection === item.id ? 'text-cyan-600' : 'text-slate-500'
+              className={`text-sm font-semibold transition-all hover:text-slate-900 ${
+                activeSection === item.id ? 'text-slate-900 underline underline-offset-4' : 'text-slate-500'
               }`}
             >
               {item.label}
